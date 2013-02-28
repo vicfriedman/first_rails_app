@@ -1,0 +1,9 @@
+<h1>About</h1>
+<h2>Our Team</h2>
+<ul>
+  <% @authors.each do |a| %>
+    <li> <%= a %> </li>
+  <% end %>
+</ul>
+
+<%= link_to "Home", root_path %>

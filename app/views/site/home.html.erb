@@ -4,11 +4,17 @@
 <h1>Mixtape Application!</h1>
 <h2>This is our temporary homepage.</h2>
 </head>
+
+<nav>
+  <%= link_to "About", about_path %>
+  <%= link_to "Login", login_path %>
+  <%= link_to "Logout", logout_path %>
+</nav>
+
 <body>
 <p>It has been <%= time_ago_in_words('2013-02-28') %> since we started working on this project!
 </p>
 
-<%= link_to "About", about_path %>
 
 </body>
 </html>

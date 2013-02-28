@@ -3,6 +3,14 @@
 <head>
 <h1>About</h1>
 </head>
+
+<nav>
+  <%= link_to "Home", root_path %>
+  <%= link_to "Login", login_path %>
+  <%= link_to "Logout", logout_path %>
+</nav>
+
+
 <body>
 <h2>Our Team</h2>
 <ul>
@@ -11,7 +19,6 @@
   <% end %>
 </ul>
 
-<%= link_to "Home", root_path %>
 
 </body>
 

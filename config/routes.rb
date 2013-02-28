@@ -1,13 +1,6 @@
 Mixtape::Application.routes.draw do
 
-  resources :users
-
-
-  get "sessions/new"
-
-  get "sessions/create"
-
-  get "sessions/destroy"
+  # resources :users
 
   get "/about" => 'site#about'
   
@@ -30,6 +23,8 @@ Mixtape::Application.routes.draw do
   get '/logout' => 'sessions#destroy'
 
   post '/sessions' => 'sessions#create'
+
+  get '/signup' => 'users#registration'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

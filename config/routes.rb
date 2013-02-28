@@ -20,11 +20,13 @@ Mixtape::Application.routes.draw do
 
   get '/about/post_job' => 'songs#post_job' #not part of code. playtime.
 
-  get '/session/new' => 'sessions#new'
+  get '/login' => 'sessions#new'
 
   get '/sessions/create' => 'sessions#create'
 
-  get '/sessions/destroy' => 'sessions#destroy'
+  get '/logout' => 'sessions#destroy'
+
+  post '/sessions' => 'sessions#create'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

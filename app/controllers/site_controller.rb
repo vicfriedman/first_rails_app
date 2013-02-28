@@ -10,5 +10,5 @@ class SiteController < ApplicationController
   def jobs
     render :text => "Coming Soon!"
   end
-  
+
 end
